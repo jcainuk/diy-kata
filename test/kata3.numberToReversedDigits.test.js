@@ -7,7 +7,10 @@ describe("numberToReversedDigits", () => {
     expect(numberToReversedDigits(90876)).toEqual([6,7,8,0,9]);
     expect(numberToReversedDigits(5643)).toEqual([3,4,6,5]);
 
-    expect(numberToReversedDigits('mocha')).toEqual('This data type is not a number');
+    expect(numberToReversedDigits('mocha')).toBe('This data type is not a number');
+   
+  
+    
   
 
 
