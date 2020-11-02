@@ -3,7 +3,7 @@ const { joinNames } = require("../src");
 describe("joinNames", () => {
   test("returns string of names, seperated by commas and an ampersand", () => {
     //1 name
-    //expect(joinNames([{ name: 'Alvin' }])).toEqual('Alvin');
+    expect(joinNames([{ name: 'Alvin' }])).toEqual('Alvin');
     //2 name
     expect(joinNames([{ name: 'Alvin' }, { name: 'Simon' }])).toEqual('Alvin & Simon');
     //3 names
