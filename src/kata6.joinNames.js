@@ -1,15 +1,19 @@
 const joinNames = namesObj => {
-
-    let newString = namesObj.map(function (obj){
-    return obj.name;}).join(', ');
+    if(namesObj.length === 1){return namesObj.map(function (obj){
+  return obj.name;}) 
+  }
     
-    let lastComma = newString.lastIndexOf(','), otherchar = '& ';
-    
-    let finalString = newString.slice(0, lastComma) + otherchar + newString.slice(lastComma+1);
-    
-    return finalString;
-    
-        
-    };
+  else {
+  const newString = namesObj.map(function (obj){
+  return obj.name;}).join(', ');
+  
+  const lastComma = newString.lastIndexOf(','), otherchar = ' &';
+  
+  const finalString = newString.slice(0, lastComma) + otherchar + newString.slice(lastComma+1);
+  
+  return finalString;
+  
+      }
+  };
 
 module.exports = joinNames;
