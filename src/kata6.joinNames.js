@@ -4,7 +4,7 @@ const joinNames = namesObj => {
   }
     
   else {
-  const newString = namesObj.map(function (obj){
+  const newString = namesObj.map((obj) => {
   return obj.name;}).join(', ');
   
   const lastComma = newString.lastIndexOf(','), otherchar = ' &';
