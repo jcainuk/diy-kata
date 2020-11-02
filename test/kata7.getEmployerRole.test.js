@@ -7,6 +7,10 @@ describe("getEmployerRole", () => {
                      {name: 'Javid', role: 'Human Recommended Reading Assistant'}]
 
   it("returns the employee's role in the company", () => {});
+
+  expect(getEmployerRole("Paul", employees)
+  ).toEqual("This person is not an employee");
+
   expect(getEmployerRole("Javid", employees)
   ).toEqual("Human Recommended Reading Assistant");
   expect(getEmployerRole("Satti", employees)
