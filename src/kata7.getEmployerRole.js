@@ -14,7 +14,7 @@ const getEmployerRole = (employeeName, employees) => {
     //4. If not found return a string to say so
     if (employeeFound === undefined) { return "This person is not an employee" }
     //5. If found return the individual employee's job role as a string ''
-    else { return employeeFound.role; }
+    return employeeFound.role;
 
 };
 
