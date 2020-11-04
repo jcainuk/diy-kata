@@ -6,13 +6,14 @@ describe("joinNames", () => {
     expect(joinNames([{ name: 'Alvin' }])).toEqual('Alvin');
     //2 name
     expect(joinNames([{ name: 'Alvin' }, { name: 'Simon' }])).toEqual('Alvin & Simon');
+    expect(joinNames([{ name: 'Alvin' }, { name: 'Simon' }])).not.toEqual('Alvin, Simon');
     //3 names
     expect(joinNames([{ name: 'Bart' }, { name: 'Lisa' }, { name: 'Maggie' }])).toEqual('Bart, Lisa & Maggie');
-
+    expect(joinNames([{ name: 'Bart' }, { name: 'Lisa' }, { name: 'Maggie' }])).not.toEqual('Bart, Lisa, Maggie');
 
     //5 names 
     expect(joinNames([{ name: 'Mel B' }, { name: 'Mel C' }, { name: 'Victoria' }, { name: 'Geri' }, { name: 'Emma' }])).toEqual('Mel B, Mel C, Victoria, Geri & Emma');
-
+    expect(joinNames([{ name: 'Mel B' }, { name: 'Mel C' }, { name: 'Victoria' }, { name: 'Geri' }, { name: 'Emma' }])).not.toEqual('Mel B, Mel C, Victoria, Geri, Emma');
 
   });
 });
