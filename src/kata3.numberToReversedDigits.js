@@ -16,8 +16,6 @@ const numberToReversedDigits = number => {
     else {console.log('This data type is not a number');
         return "This data type is not a number";
     }
-
-
 };
 
 module.exports = numberToReversedDigits;
