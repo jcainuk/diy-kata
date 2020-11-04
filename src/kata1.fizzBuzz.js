@@ -5,7 +5,6 @@ const fizzBuzz = number => {
         return "FizzBuzz";
     }
 
-
     if (number % 5 === 0) {
         return "Buzz";
     }
@@ -15,7 +14,6 @@ const fizzBuzz = number => {
     }
 
     return number;
-
 };
 
 module.exports = fizzBuzz;
