@@ -13,9 +13,18 @@ describe("getEmployerRole", () => {
 
   expect(getEmployerRole("Javid", employees)
   ).toEqual("Human Recommended Reading Assistant");
+  expect(getEmployerRole("Javid", employees)
+  ).not.toEqual("Sales Associate");
+
+
   expect(getEmployerRole("Satti", employees)
   ).toEqual("Developer");
+  expect(getEmployerRole("Satti", employees)
+  ).not.toEqual("Human Recommended Reading Assistant");
+
   expect(getEmployerRole("Jenny", employees)
   ).toEqual("Sales Associate");
+  expect(getEmployerRole("Jenny", employees)
+  ).not.toEqual("Developer");
 
 });
