@@ -1,9 +1,5 @@
 const booleanToWord = boolean => {
-
-if(Boolean(boolean)) {return "yes";}
-
-return "no";
-
+    return boolean ? "yes" : "no";
 
 };
 
